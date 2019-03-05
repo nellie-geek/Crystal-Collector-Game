@@ -1,0 +1,14 @@
+/*Adjust jumbotron header */
+/* Need to adjust cards to center */
+/*Text align center margin 0 auto */
+.card {
+    margin-left: 80px;
+    text-align: center;
+
+
+}
+
+.crystal-image {
+    width: 300px;
+    height: 300px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Crystal Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Crystal Collector!</h1>
+                <p class="lead">The objective - make your total score match the target score using the crystals below.<br>
+                The four crystals below will add points to your total score, but you don't know their points value until you click on them.
+                Be sure to add carefully, if your score goes over the target score you lose. <br>
+                The crystal values will change with every new game start.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Target Score</h5>
+                    <p class="target-score-text"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Your Score</h5>
+                    <p class="your-score-text"></p>
+                </div>
+            </div>
+        </div>
+        <div class="crystal-image"></div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div id="crystal-1"></div>
+                    <div id="crystal-2"></div>
+                    <div id="crystal-3"></div>
+                    <div id="crystal-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
