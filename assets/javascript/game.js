@@ -1,10 +1,15 @@
-var targetScore = ["19", "20", "21", "22", "23", "24", "25"]   //random value assigned - gotta be a better way
-var yourScore   //four random values 
-var yourCounter = 0;  //int to add values from click event - crystals random value
+//array 19-120 to set target score 
+var targetScore = Math.floor(Math.random() * 100 - 19)
+//player starts at 0
+var yourScore = 0; 
+//four random values//int to add values from click event - crystals random value
+var yourCounter = 0;
+
 var wins = 0;
 var losses = 0;
+//Values for crystals to randomly be assigned
 var crystalNum = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
-var increment = targetScore[Math.XXXX(Math.random())]; //office hours demo used round????
+var increment = yourScore[Math.floor(Math.random())]; 
 
 
 
@@ -12,6 +17,9 @@ var increment = targetScore[Math.XXXX(Math.random())]; //office hours demo used 
 // assigned by function
 $(".crystal-image").on("click", function() {
 
+    
+    
+    
     yourCounter += increment; //add crystal values to your score counter
 
     //logic to win
