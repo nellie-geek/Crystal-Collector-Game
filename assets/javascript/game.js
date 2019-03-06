@@ -10,13 +10,15 @@ var losses = 0;
 //Values for crystals to randomly be assigned
 var crystalNum = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
 var increment = yourScore[Math.floor(Math.random())]; 
-
+var startNew 
 
 
 //Click event on crystal image - will add int to your score based on the random value 
 // assigned by function
 $(".crystal-image").on("click", function() {
 
+    //assign random value to each crystal
+    //set target score
     
     
     

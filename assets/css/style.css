@@ -2,13 +2,14 @@
 /* Need to adjust cards to center */
 /*Text align center margin 0 auto */
 .card {
-    margin-left: 80px;
     text-align: center;
 
 }
 
-.crystal-image{
-    display: inline-block;
+.crystal{
+    display: inline;
+    width: 75px;
+    height: 75px;
 }
 
 .h5 .p {
