@@ -1,19 +1,31 @@
 /*Adjust jumbotron header */
 /* Need to adjust cards to center */
 /*Text align center margin 0 auto */
+::backdrop {
+    
+}
+
 .card {
     text-align: center;
 
 }
 
 .crystal{
-    display: inline;
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
+    border: 5px;
+    border-color: lightgray;
+    align-content: center;
+    margin-left: 20px;
+
 }
 
 .h5 .p {
     font-display: bold;
     font-size: 20px;
 
+}
+
+#total-score {
+    text-align: left
 }
