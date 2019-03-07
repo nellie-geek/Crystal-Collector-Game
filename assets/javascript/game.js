@@ -41,20 +41,19 @@ function startNew() {
     // assigned by function
 $(".crystal").on("click", function() {
     var crystalClicked=$(this).attr("id");
-    console.log(crystalClicked);  
     
     if (crystalClicked === "crystal-1") {
         yourScore += crystal1;
-        console.log(yourScore);
+
     } else if (crystalClicked === "crystal-2") {
         yourScore += crystal2;
-        console.log(yourScore);
+
     } else if (crystalClicked === "crystal-3") {
         yourScore += crystal3;
-        console.log(yourScore);
+
     } else if (crystalClicked === "crystal-4") {
         yourScore += crystal4;
-        console.log(yourScore);
+
     }
 
         //logic to win
