@@ -2,11 +2,23 @@
 /* Need to adjust cards to center */
 /*Text align center margin 0 auto */
 ::backdrop {
-    
+    background: rgb(156, 74, 101);
 }
 
-.card {
+.card .target-score-text {
     text-align: center;
+    background: black;
+    color: aliceblue;
+    font: bold;
+    font-size: 24px; 
+}
+
+.card .your-score-text {
+    text-align: center;
+    background: aliceblue;
+    color: black;
+    font: bold;
+    font-size: 24px;
 
 }
 

@@ -1,7 +1,7 @@
-//array 19-120 to set target score 
+    //array 19-120 to set target score 
 var targetScore = Math.floor(Math.random() * 102) + 19;
 
-//Game starts with these at 0
+    //Game starts with these at 0
 var yourScore = 0; 
 var wins = 0;
 var losses = 0;
@@ -9,7 +9,7 @@ $(".your-score-text").text("0");
 $("#win").text(wins);
 $("#lost").text(losses);
 
-//Values for crystals to randomly be assigned
+    //Values for crystals to randomly be assigned
 var crystalNum = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
 function crystalValue() {
     return (Math.floor(Math.random() * crystalNum.length + 1));
@@ -23,7 +23,7 @@ var crystal4 = crystalValue(crystalNum);
 
 $(".target-score-text").text(targetScore);
 
-// Game reset - assign new crystal value, yourscore and targetscore set to 0
+    // Game reset - assign new crystal value, yourscore and targetscore set to 0
 function startNew() { 
 
     crystal1 = crystalValue(crystalNum);
@@ -37,8 +37,8 @@ function startNew() {
 
 }
 
-//Click event on crystal image - will add int to your score based on the random value 
-// assigned by function
+    //Click event on crystal image - will add int to your score based on the random value 
+    // assigned by function
 $(".crystal").on("click", function() {
     var crystalClicked=$(this).attr("id");
     console.log(crystalClicked);  
@@ -56,26 +56,30 @@ $(".crystal").on("click", function() {
         yourScore += crystal4;
         console.log(yourScore);
     }
+
+        //logic to win
+        if (yourScore === targetScore) {
+            alert("You win!");
+            wins++;
+            $("#win").text(wins);
+            startNew();
+            return;
+                
+        } else if (yourScore > targetScore) { 
+            alert("Too many, try again.");
+            losses++;
+            $("#lost").text(losses);
+            startNew();
+            return;
+            }
    
     $(".your-score-text").text(yourScore);
     yourScore(increment); 
-    //increment will throw an undefined error however, without this my crystals will assign a different value with every click/will be going over during office hour and with tutor 
+        //increment will throw an undefined error however, without this my crystals will assign a 
+        //different value with every click/will be going over during office hour and with tutor 
 
     
-    //logic to win
-    if (yourScore === targetScore) {
-        alert("You win!");
-        wins++;
-        $("#win").text(wins);
-        startNew();
-        return;
-    } else if (yourScore > targetScore) { 
-        alert("Too many, try again.");
-        losses++;
-        $("#lost").text(losses);
-        startNew();
-        return;
-    }
+
 
    
 
