@@ -1,5 +1,6 @@
     //array 19-120 to set target score 
 var targetScore = Math.floor(Math.random() * 102) + 19;
+var increment 
 
     //Game starts with these at 0
 var yourScore = 0; 
@@ -73,10 +74,8 @@ $(".crystal").on("click", function() {
             }
    
     $(".your-score-text").text(yourScore);
-    yourScore(increment); 
-        //increment will throw an undefined error however, without this my crystals will assign a 
-        //different value with every click/will be going over during office hour and with tutor 
-
+    increment += yourScore; 
+        
     
 
 
